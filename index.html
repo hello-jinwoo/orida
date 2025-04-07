@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Single Image Super-Resolution">
+  <meta name="keywords" content="PCSR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORIDa: Object-centric Image Composition Dataset</title>
+
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ORIDa: Object-centric Image Composition Dataset</h1>
+          <h3 class="subtitle is-3 publication-conference">CVPR 2025</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Jinwoo Kim</a>,</span>
+            <span class="author-block">
+              Sangmin Han</a>,</span>
+            <span class="author-block">
+              Jinho Jeong</a>,</span>
+            <span class="author-block">
+              Jiwoo Choi</a>,
+            </span>
+            <span class="author-block">
+              Dongyoung Kim</a>,
+            </span>
+            <span class="author-block">
+              Seon Joo Kim</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Yonsei University,</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://hello-jinwoo.github.io/orida/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-database"></i>
+                  </span>
+                  <span>Data (soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://hello-jinwoo.github.io/orida/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://hello-jinwoo.github.io/orida/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="./static/images/teaser.png" alt="Teaser" style="margin-bottom: 40px;"/>
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Object compositing, the task of placing and harmonizing objects in images of diverse visual scenes, has become an important task in computer vision with the rise of generative models. However, existing datasets lack the diversity and scale required to comprehensively explore real-world scenarios. We introduce ORIDa (Object-centric Real-world Image Composition Dataset), a large-scale, real-captured dataset containing over 30,000 images featuring 200 unique objects, each of which is presented across varied positions and scenes. ORIDa has two types of data: factual-counterfactual sets and factual-only scenes. The factual-counterfactual sets consist of four factual images showing an object in different positions within a scene and a single counterfactual (or background) image of the scene without the object, resulting in five images per scene. The factual-only scenes include a single image containing an object in a specific context, expanding the variety of environments. To our knowledge, ORIDa is the first publicly available dataset with its scale and complexity for real-world image composition. Extensive analysis and experiments highlight the value of ORIDa as a resource for advancing further research in object compositing.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Examples</h2>
+          <img src="./static/images/examples.png" alt="Overview" />
+          <div class="content has-text-justified">
+          <p>
+            <b>Factual-Counterfactual (F-CF) Sets and Factual-Only (F-Only) Images.</b>
+            The left side shows F-CF sets, consisting of one background-only image and four object-inserted images captured with the object in different positions. The right side displays F-Only images, which feature objects in diverse scenes without corresponding background-only images.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Statistics</h2>
+        <img src="./static/images/results_quantitative.PNG" alt="Main Quantitative Results" />
+        <div class="content has-text-justified">
+          <p>
+            <b>Dataset statistics per object and attribute.</b>
+            The top chart displays the number of images per object, sorted by y-value, for both factual-only and factual-counterfactual sets. The bottom charts present the percentage distribution of objects based on key attributes: number of colors, transparency, reflectivity, roughness, and semantic class, illustrating the variety and diversity within the dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- 
+<section class="section" id="Citation">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <pre><code>@inproceedings{jeong2025accelerating,
+  title={Accelerating Image Super-Resolution Networks with Pixel-Level Classification},
+  author={Jeong, Jinho and Kim, Jinwoo and Jo, Younghyun and Kim, Seon Joo},
+  booktitle={European Conference on Computer Vision},
+  pages={236--251},
+  year={2025},
+  organization={Springer}
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website template was borrowed from the <a href="https://nerfies.github.io/">Nerfies</a> project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
